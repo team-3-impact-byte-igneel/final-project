@@ -11,3 +11,207 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(255, 255, 255);
+}
+
+#logo {
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+#empty-space { 
+  width:500px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  bottom: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+li a:hover {
+  border-color: rgb(184, 184, 184);
+}
+
+#signup-login-buttons {
+  display: flex;
+  align-items: center;
+}
+
+#login:hover {
+  border-color: rgb(171, 171, 171)
+}
+#getstarted {
+  border-color: rgb(255, 98, 0);
+  background-color: rgb(255, 98, 0);
+  color: white;
+}
+
+#getstarted:hover {
+  border-color: rgb(211, 83, 4);
+  background-color: rgb(211, 83, 4);
+  color: white;
+}
+
+.buttons {
+  font-size: 16px; 
+  font-weight: bold;
+  margin: 8px;
+  width: 140px;
+  height: 37px;
+  background: transparent;
+  border-radius: 10px;
+  border-width: 3px; 
+}
+
+#main-content {
+  margin: 0;
+  background-image: url("./images/main-image.jpg");
+  background-size: cover;
+  height: 300px;
+}
+
+#main-text {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+p {
+  margin: 0;
+}
+
+#black-bar {
+  height: 40px;
+  background-color: rgb(255, 98, 0);
+}
+
+#quotes {
+  margin-top: 50px;
+}
+
+#quote-box-heading {
+  font-size: 40px;
+  text-align: center;
+  color: orange;
+  margin: 0 auto 50px auto;
+  max-width: 1000px;
+}
+
+#quoteBoxContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#quoteBox {
+  width: 250px;
+  height: 250px;
+  font-size: 30px;
+  font-weight: bold;
+  filter: sepia(100%);
+  color: white;
+  text-shadow: 0 0 5px black;
+  opacity: 0.8;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: blanchedalmond;
+  text-align: center;
+  line-height: 250px;
+  margin:25px 10px;
+}
+
+.depresi {
+  background-image: url('./images/image4.jpg')
+}
+.stres {
+  background-image: url('./images/image2.jpeg')
+}
+.kegelisahan {
+  background-image: url('./images/image3.jpeg')
+}
+.amarah {
+  background-image: url('./images/image1.jpeg')
+}
+.hubungan {
+  background-image: url('./images/image5.jpg')
+}
+.percaya-diri {
+  background-image: url('./images/image6.jpeg')
+}
+.duka {
+  background-image: url('./images/image7.jpg')
+}
+.rasa-takut {
+  background-image: url('./images/image8.jpeg')
+}
+
+
+@media only screen and (max-width: 1200px) {
+  #empty-space { 
+    width:200px;
+  }  
+}
+
+@media only screen and (max-width: 910px) {
+  #empty-space { 
+    width:0px;
+  }
+  
+  #getstarted {
+    display: none;
+  }
+
+  #quote-box-heading {
+    font-size: 30px;
+    max-width: 600px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #main-content {
+    margin: 0;
+    background-image: url("./images/main-image.jpg");
+    max-height: 200px;
+  }
+  #quote-box-heading {
+    font-size: 30px;
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #login { 
+    width:70px;
+  }
+}
