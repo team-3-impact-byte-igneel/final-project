@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 
+import GetStarted from './components/getStarted'
+
 class QuoteBox extends React.Component {
   render() {
     return (
@@ -8,8 +10,8 @@ class QuoteBox extends React.Component {
         <p id="quote">{this.props.name}</p>
       </div>
     )
-  }
-}
+  }}
+
 
 class QuoteBoxContainer extends React.Component {
   render() {
@@ -23,6 +25,8 @@ class QuoteBoxContainer extends React.Component {
         <QuoteBox name={"duka"}/>
         <QuoteBox name={"rasa-takut"}/>
         <QuoteBox name={"percaya-diri"}/>
+
+        <GetStarted />
       </div>
     )
   }

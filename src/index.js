@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import QuoteBoxContainer from './App';
 import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(<QuoteBoxContainer />, document.getElementById('quote-boxes'));
 
