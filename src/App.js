@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class QuoteBox extends React.Component {
+  render() {
+    return (
+      <div id="quoteBox" className={this.props.name}>
+        <p id="quote">{this.props.name}</p>
+      </div>
+    )
+  }
 }
 
-export default App;
+class QuoteBoxContainer extends React.Component {
+  render() {
+    return (
+      <div id="quoteBoxContainer">
+        <QuoteBox name={"amarah"}/>
+        <QuoteBox name={"stres"}/>
+        <QuoteBox name={"kegelisahan"}/>
+        <QuoteBox name={"depresi"}/>
+        <QuoteBox name={"hubungan"}/>
+        <QuoteBox name={"duka"}/>
+        <QuoteBox name={"rasa-takut"}/>
+        <QuoteBox name={"percaya-diri"}/>
+      </div>
+    )
+  }
+}
+
+export default QuoteBoxContainer
